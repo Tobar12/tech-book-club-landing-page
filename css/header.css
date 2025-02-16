@@ -1,0 +1,132 @@
+@import url(default.css);
+
+header {
+    background-color: var(--neutral-100);
+    background-image: url(../imgs/pattern-light-bg.svg);
+    padding: 24px 16px 80px 16px;
+}
+
+header h1 {
+    background-clip: text;
+    background-image: linear-gradient(107deg, #FF9A60 -16.37%, #062630 61.84%);
+    margin: 48px 0px 24px 0px;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__text__paragraph {
+    color: var(--neutral-700);
+    margin-bottom: 32px;
+}
+
+.header__text__button {
+    align-items: center;
+    background-color: var(--light-salmon-50);
+    border: 2px solid var(--neutral-900);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--neutral-900);
+    display: flex;
+    gap: 16px;
+    height: 64px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.header__rating {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    margin: 20px 0px 64px 0px;
+}
+
+.header__rating img {
+    height: 40px;
+    width: 110px;
+}
+
+.header__rating__stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__rating__stars img {
+    height: 24px;
+    width: 24px;
+}
+
+.header__rating__stars p {
+    color: var(--neutral-700);
+}
+
+.header__img {
+    border-radius: 6px;
+}
+
+.desktop-image, .tablet-image {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 32px 4vw 80px 4vw;
+        background-image: url(../imgs/pattern-light-bg.svg), url(../imgs/pattern-glow.svg);
+        background-position: center, top 100vw left 30vw;
+        background-repeat: repeat, no-repeat;
+    }
+
+    .header__text__button {
+        width: 380px;
+    }
+
+    .header__img {
+        width: 100%;
+        max-width: 704px;
+        justify-self: center;
+    }
+
+    .tablet-image {
+        display: block;
+    }
+
+    .desktop-image, .mobile-image {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        padding: 32px 9.375vw 80px 9.375vw;
+        background-position: center, top 150px right -550px;
+    }
+
+    .header__main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .header__text {
+        max-width: 620px;
+        justify-self: end;
+    }
+
+    .header__img {
+        max-width: 620px;
+    }
+
+    .header__rating {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .desktop-image {
+        display: block;
+    }
+
+    .tablet-image, .mobile-image {
+        display: none;
+    }
+}

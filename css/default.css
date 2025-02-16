@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap');
+
+:root {
+    --neutral-900: #062630;
+    --neutral-700: #385159;
+    --neutral-200: #E6E1DF;
+    --neutral-100: #FAF5F3;
+    --neutral-0: #FFFFFF;
+    --light-salmon-500: #FEA36F;
+    --light-salmon-100: #FFE2D1;
+    --light-salmon-50: #FFF5EF;
+    --text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+    --gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+a:hover {
+    background: var(--gradient);
+}
+
+a:focus {
+    border-style: double;
+}
+
+.text-preset-1 {
+    font-family: "Martian Mono", serif;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -2px;
+    font-size: 2.375rem;
+}
+
+.text-preset-2 {
+    font-family: "Martian Mono", serif;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -2px;
+    font-size: 2.125rem;
+}
+
+.text-preset-3 {
+    font-family: "Martian Mono", serif;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+}
+
+.text-preset-4 {
+    font-family: "Martian Mono", serif;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+}
+
+.text-preset-4-regular {
+    font-family: "Martian Mono", serif;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+}
+
+.text-preset-5 {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    font-size: 1.25rem;
+}
+
+.text-preset-5-semibold {
+    font-family: "Inter", serif;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    font-size: 1.25rem;
+}
+
+.text-preset-6 {
+    font-family: "Martian Mono", serif;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1px;
+    font-size: 1rem;
+}
+
+.text-preset-7 {
+    font-family: "Martian Mono", serif;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -1px;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+
+    body, main {
+        gap: 80px;
+    }
+
+    .text-preset-1 {
+        font-size: 3.875rem;
+    }
+
+    .text-preset-2 {
+        font-size: 3.125rem;
+    }
+
+    .text-preset-3 {
+        font-size: 2.125rem;
+    }
+
+    .text-preset-6 {
+        font: 1.125rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    body, main {
+        gap: 120px;
+    }
+}

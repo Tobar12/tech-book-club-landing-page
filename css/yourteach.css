@@ -1,0 +1,73 @@
+@import url(default.css);
+
+.main__yourteach {
+    background-color: var(--neutral-100);
+    background-image: url(../imgs/pattern-light-bg.svg), url(../imgs/pattern-glow.svg);
+    background-position: center, top 90px left -80px;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 16px;
+    margin: 17.5px;
+}
+
+.main__yourteach__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main__yourteach__div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__yourteach__circle {
+    align-items: center;
+    border: 2px solid var(--neutral-900);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+@media (min-width: 768px) {
+    .main__yourteach {
+        background-position: center, top left 200px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main__yourteach {
+        background-position: center, top left 200%;
+        gap: 64px;
+    }
+
+    .main__yourteach h2 {
+        text-align: center;
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    .main__yourteach__list {
+        flex-direction: row;
+        width: 1050px;
+        gap: 64px;
+        margin: 0 auto;
+    }
+
+    .main__yourteach__div {
+        background-image: url(../imgs/pattern-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .main__yourteach__div:last-child {
+        background-image: none;
+    }
+}

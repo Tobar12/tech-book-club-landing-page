@@ -1,0 +1,101 @@
+@import url(default.css);
+
+.main__membershipoptions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0px 16px;
+}
+
+.main__membershipoptions h2, h3 {
+    color: var(--neutral-900);
+}
+
+.main__membershipoptions p, span {
+    color: var(--neutral-700);
+}
+
+.main__membershipoptions__div {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 24px;
+}
+
+.main__membershipoptions__div__item {
+    border: 1px solid var(--neutral-200);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+}
+
+.div__pro {
+    background-color: var(--neutral-100);
+    background-image: url(../imgs/pattern-glow.svg);
+    background-position: top -120px left -120px;
+    background-repeat: no-repeat;
+}
+
+.main__membershipoptions__div__item__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main__membershipoptions__div__item__line {
+    width: 100%;
+    border: 1px solid var(--neutral-200);
+}
+
+.main__membershipoptions__div__item__description {
+    display: flex;
+    gap: 12px;
+}
+
+.main__membershipoptions a {
+    background-color: var(--light-salmon-50);
+    border: 2px solid var(--neutral-900);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--neutral-900);
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .main__membershipoptions {
+        padding: 0px 32px;
+    }
+
+    .main__membershipoptions__div {
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box;
+    } 
+}
+
+@media (min-width: 1440px) {
+    .main__membershipoptions {
+        align-self: center;
+        max-width: 970px;
+        gap: 64px;
+    }
+
+
+    .main__membershipoptions__div {
+        grid-template-columns: 1fr 1.25fr 1fr;
+        box-sizing: border-box;
+    } 
+
+    .div__pro {
+        height: 110%;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .main__membershipoptions h2 {
+        text-align: center;
+    }
+}
